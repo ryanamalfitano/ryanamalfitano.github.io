@@ -6,4 +6,4 @@ Here's some placeholder text, and some more placeholder text, and some more plac
 
 ![](http://www.unoosa.org/res/timeline/index_html/space-2.jpg)
 
-[Blog posts](https://ryanamalfitano.github.io/blog.md)
+[Blog posts](https://ryanamalfitano.github.io/blog.html)
