@@ -2,6 +2,8 @@
 
 <h1>Blog Post - Defining Digital Humanities</h1>
 
+<br/>
+
 Matthew Kirschenbaum wrote an article in 2012 titled What Is Digital Humanities and What’s It Doing in English Departments? to explain the titular faculty of Digital Humanities (or DH); and explain he did, both its history as a field of study, the origin of the term Digital Humanities, and the previously used Humanities Computing, as well as its significance and why it is typically placed within English departments. But not every member of the field agrees with his opinions on the origins of DH, or whether it is indeed so exclusively linked to English. In a 2016 publication of the same book series, Debates in the Digital Humanities, Lauren Klein and Matthew Gold challenge the idea of a rigid definition of DH in their article titled Digital Humanities: The Expanded Field, and bring to light several new ideas about DH's origins and meaning. So what kind of argument do these two articles present about the nature of DH?
 
 Kirschenbaum tries, as seen in the title of his article, to argue that; “...digital humanities has accumulated a robust professional apparatus that is probably more rooted in English than any other departmental home.” (Kirschenbaum, 2012) However, Klein and Gold argue that DH should acknowledge its roots as having been placed in several disciplines: 
@@ -17,13 +19,10 @@ Kirschenbaum also argues that DH is used as a “free-floating signifier”, and
 Klein and Gold argue that this relaxed attitude towards DH's definition and what works can be considered to fall under DH is one of the issues with the field. Although this attitude may contribute to a sense of accessibility to those who wish to enter the field, it may also make for a lack of intimacy between members, as the loose definition means that very different works can be nonchalantly placed in the same discipline, with no deeper categorization to differentiate them or to allow those studying similar concepts to identify one another.
 
 Through one of DH's own unique tools, the text analysis tool Voyant, we can further analyse these two articles to see how they focus on different words and how their tone conveys their authors' intent. As we can see from the first cirrus created from Kirschenbaum's article, the words “digital” and “humanities” are predictably the most used words, with “computing”, “computers”, and “convention” falling behind it. “English” is also one of the top words used, as Kirschenbaum argues that DH belongs in English departments.
-
+<br/>
 <img alt="Kirschenbaum Cirrus" src="cirrus-kirschenbaum.png" />
-
 Next, we have the cirrus from Klein and Gold, which paints a very different picture. Although “digital” and “humanities” are once again the top two words used, there are also several others that are frequently used in this article: “DH”, of course, the shorthand for Digital Humanities, as well as “field”, instead of Kirschenbaum's more specific English. This article also makes heavy use of words such as “scholar”, “pedagogy”, “volume”, and “expanded”, in its discussion about the nature of DH itself, rather than Kirschenbaum's recollection of its history. This further shows Kirschenbaum's investment in DH as a field connected to English, whereas Klein and Gold make reference to “fields” in general.
-
 <img alt="Klien/Gold Cirrus" src="cirrus-klien-gold.png" />
-
 The argument on where DH came from is far from exclusive between these authors. In fact, it seems that just about any DH scholar has their own opinion on where DH is rooted, whether they write about it specifically or if they simply mention it as an offhanded comment:
 
 <blockquote>In many respects, digital humanities is a scholarly discipline like any other. It has, first and foremost, a community with a history. It also has books and journals, scholarly societies, yearly conferences, sources of funding, programs, curricula, students, faculty, and a vast network of scholars both traditional and nontraditional. In this respect, it is more or less like history, or English, or philosophy, or mathematics.  (Ramsay, p.83, 2011)</blockquote>
@@ -39,3 +38,7 @@ Kirschenbaum, M. (2012). What Is Digital Humanities and What’s It Doing in Eng
 Klein, L., & Gold, M. (2016). Digital Humanities: The Expanded Field. Retrieved March 05, 2017, from http://dhdebates.gc.cuny.edu/debates/text/51
 
 Ramsay, S. (2011). Reading Machines: Toward an Algorithmic Criticism. University of Illinois Press.
+<br/>
+<style>
+    img { display: block; margin: auto; }
+</style>
