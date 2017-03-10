@@ -1,9 +1,7 @@
-# IASC 2P02 | Ryan Amalfitano
+<h2>IASC 2P02 | Ryan Amalfitano</h2>
 
-## About Me
+<h1>About Me</h1>
 
-Here's some placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text, and some more placeholder text.
+<p>Hi, I'm Ryan! I'm a current student at Brock University in St. Catharines, and I'm in my second year of the Interactive Arts and Sciences program. I like Dark Souls, rock music, and playing around with the latest gadgets and technology.</p>
 
-![](http://www.unoosa.org/res/timeline/index_html/space-2.jpg)
-
-[Blog posts](https://ryanamalfitano.github.io/blog.html)
+<a href="https://ryanamalfitano.github.io/blog.html">Read my Blog Post</a>
