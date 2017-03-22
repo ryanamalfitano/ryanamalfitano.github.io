@@ -1,126 +1,184 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>The Routefinder</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/beige.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Custom CSS Styles -->
+        <link rel="stylesheet" href="css/custom.css">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section><!-- Slide 1 -->
+                    <h2 id="frontpage-subtitle"></h2>
+                    <h1 id="frontpage-title"><span>the</span> Plus Four Routefinder</h1>
+                    <h3 id="frontpage-subsubtitle">hosted by Ryan Amalfitano</h3>
+                    
+                    <aside class="notes">
+                        Hey everyone, welcome to my presentation on the Plus Four Routefinder. The Routefinder is a pretty unique and interesting piece of technology,
+                        even by today's standards. I'm going to be explaining what this thing is, how it works, and what influence it might have had on some similar
+                        technologies that we know today.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 2 -->
+                    <img src="img/routefinder1.jpg" alt="Routefinder Image" />
+                    <aside class="notes">
+                        So first of all, what is the Routefinder? This is an image of what it looked like. It's a wrist-mounted navigation device made in the 1920's that
+                        you would load up with these map scrolls, and manually scroll them with the knobs on the side as you were driving down the road, following the
+                        route on the map.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 3 -->
+                    <img src="img/routefinder2.jpg" alt="Routefinder Image" />
+                    <aside class="notes">
+                        These scrolls would show the route you should take to get from where you are to your destination - using highway and road numbers, city names,
+                        and other landmarks to guide you on your way even if you're unfamiliar with the area. There were apparently many scrolls for many routes and
+                        destinations when this thing existed.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 4 -->
+                    <img src="img/routefinder3.jpg" alt="Routefinder Image" />
+                    <aside class="notes">
+                        This was a pretty interesting invention for its time - even though it was manually operated, it was the first device of its kind to try and
+                        automate navigation and pathfinding to some degree, as it showed the driver a map and planned out their route, so they could concentrate
+                        on driving and wouldn't have to plan out a route themselves or ask locals for directions the whole way.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 5 -->
+                    <img src="img/routefinder4.jpg" alt="Routefinder Image" />
+                    <aside class="notes">
+                        Now, I know what you're thinking - why aren't we all using Routefinders every day? Well, there are some pretty obvious flaws with this thing
+                        even at first glance. It might have been somewhat useful at the time, but it really just feels too gimmicky, and is only useful when you're
+                        driving. Plus, you could just use a regular map and not be at much of a loss.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 6 -->
+                    <img src="img/iterauto1.jpg" alt="Iter Auto Image" />
+                    <aside class="notes">
+                        But, the Routefinder actually did inspire another early navigation tech around 1932 by the name of the Iter Auto: it operated on the same concept
+                        as the Routefinder, but was mounted directly into your car, and used a contraption similar to a modern speedometer to scroll the map
+                        automatically based on your speed.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 7 -->
+                    <img src="img/iterauto2.jpg" alt="Iter Auto Image" />
+                    <aside class="notes">
+                        The Iter Auto also used map scrolls like the Routefinder, but it seems like it was focused on day-to-day navigation, rather than providing
+                        routes for longer trips like the Routefinder did. I couldn't find out how to change map scrolls in the Iter Auto, but you might've had to
+                        after every single turn, which would get old pretty fast.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 8 -->
+                    <img src="img/gps.jpg" alt="Did the Routefinder inspire GPS?" />
+                    <aside class="notes">
+                        So even though the Routefinder and the Iter Auto didn't really catch on, I'm sure you can see some similarities between them and the modern GPS
+                        and mapping technology we have today. These gadgets were like maps on your smartphone or dashboard navigation systems, only eighty or so years
+                        earlier than the systems we rely on now.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 8 -->
+                    <img src="img/mapquestvsgmaps.jpg" alt="MapQuest VS Google Maps! ...VS Routefinder?" />
+                    <aside class="notes">
+                        This is pretty interesting, as the first online mapping service to really become popular was MapQuest, and it didn't even exist until 1996,
+                        taking a few years to really become well-known. Google Maps then began to take over and released Google Maps for Mobile in 2005, eighty five
+                        years after the Routefinder was made.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 10 -->
+                    <img src="img/dair.jpg" alt="GM's DAIR System" />
+                    <aside class="notes">
+                        As for vehicle-based navigation systems, like the Iter Auto, GM worked on a system in 1966 to allow drivers to contact a service center and get
+                        assistance. There were a lot of ambitious features planned for this system known as DAIR, but it never saw the light of day. It actually came
+                        back in another form as OnStar.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 11 -->
+                    <img src="img/routefinder5.jpg" alt="Routefinder 2.0" />
+                    <aside class="notes">
+                        So, what would the Routefinder look like if it wasn't left on the side of the road and actually became popular? New models may have been created,
+                        with more capabilities, such as the ability to load multiple maps at once and switch between them quickly, to make it less annoying to switch them.
+                        It could also somehow measure speed so you didn't have to scroll the map manually.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 12 -->
+                    <img src="img/routefinder6.jpg" alt="Routefinder Teaching Google Maps" />
+                    <aside class="notes">
+                        This updated Routefinder might've gone on to pioneer more early navigation technologies, and could've caused mapping services like MapQuest or
+                        Google Maps to have been structured differently to take after the Routefinder's functionality, setting itself as the standard for the navigation
+                        devices and mapping services that came about later on.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 13 -->
+                    <img src="img/iterauto3.jpg" alt="Iter Auto Concept" />
+                    <aside class="notes">
+                        Another interesting fact about the Routefinder is that a concept very similar to the Iter Auto was patented by one John Bovy in 1921, but the
+                        Routefinder itself was built within the next few years, building off the idea - then, the Iter Auto wasn't released until 1932, a decade after
+                        the patent was claimed for an almost identical concept.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 14 -->
+                    <img src="img/routefinder-iterauto.jpg" alt="Routefinder and Iter Auto" />
+                    <aside class="notes">
+                        So to wrap up, the Routefinder was an early concept for a portable mapping and navigation system intended to make it easier for drivers to find
+                        routes to get from point A to point B, which was later also explored in the sibling device, the Iter Auto, which used a similar concept, but was
+                        mounted onto the dashboard of the vehicle.
+                    </aside>
+                </section>
+                
+                <section><!-- Slide 15 -->
+                    <h1 id="thankyou">Thank You</h1>
+                    <p><a href="https://www.gpspower.net/gps-news/330038-evolution-car-navigation-technology-pictures.html">https://www.gpspower.net/gps-news/330038-evolution-car-navigation-technology-pictures.html</a></p>
+                    <p><a href="http://www.dieselpunks.org/profiles/blogs/iter-avto-the-worlds-first">http://www.dieselpunks.org/profiles/blogs/iter-avto-the-worlds-first</a></p>
+                    <p><a href="http://www.messynessychic.com/2014/06/09/the-forgotten-firsts-10-vintage-versions-of-modern-technology/">http://www.messynessychic.com/2014/06/09/the-forgotten-firsts-10-vintage-versions-of-modern-technology/</a></p>
+                    <aside class="notes">
+                        And that's it! I put my sources here if you're interested in seeing more about the Plus Four Routefinder or the Iter Auto. Thanks for listening!
+                    </aside>
+                </section>
+            </div>
+        </div>
 
-		<title>World of Cats</title>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background="green">
-				    <h2>World of Cats</h2>
-					<p>What's not to love?</p>
-				</section>
-				
-				<section>
-					<h2>Types of Cats</h2>
-					
-					<ul>
-					    <li>Silly cats</li>
-						<li>Sleepy cats</li>
-						<li>Mystical cats</li>
-						<li>Murderous cats</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Box cats</h2>
-					<p><span class="fragment">They</span> <span class="fragment">are</span> <span class="fragment">the</span> <span class="fragment">cat's</span> <span class="fragment">pyjamas</span>
-				</section>
-				
-				<section>
-					<h2>Box cats</h2>
-					<p><span class="fragment">They are</span> <span class="fragment">the cat's pyjamas</span>
-				</section>
-				
-				<section>
-					<h2>Box cats</h2>
-					<img width="50%" src="http://i.imgur.com/9lL6u.jpg" alt="Box cat" />
-				</section>
-				
-				<section data-background="https://s-media-cache-ak0.pinimg.com/originals/7b/84/09/7b84099296210a7f572680e64958893d.jpg">
-					<h2 style="color: sky; text-shadow: 0px 0px 10px black;">Did I mention box cats?</h2>
-				</section>
-				
-				<section>
-					<p>Cats are funny!</p>
-					
-					<aside class="notes">Try not to laugh...</aside>
-				</section>
-				
-				<section>
-					<h2>Things cats chase</h2>
-					
-					<ol>
-						<li class="fragment">Mice</li>
-						<li class="fragment">Strings</li>
-						<li class="fragment">Lasers</li>
-					</ol>
-				</section>
-				
-				<section data-markdown>
-					## Cats of the internet
-					
-					[Cat on Wikipedia](https://en.wikipedia.org/wiki/Cat)
-				</section>
-				
-				<section>
-					<blockquote cite="url">Cats are great</blockquote>
-					<p>- Anonymous</p>
-				</section>
-				
-				<section data-background="img/cat1.jpg"></section>
-				
-				<section data-background="img/cat2.jpg"></section>
-				
-				<section data-background="img/cat3.jpg"></section>
-				
-				<section data-background="img/cat4.jpg"></section>
-				
-				<section data-background="img/cat5.jpg"></section>
-				
-				<section>
-					<h2>Thank you!</h2>
-					
-					<h3><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Cats</a></h3>
-					<h3><a href="https://www.google.ca/search?q=cats&source=lnms&tbm=isch" target="_blank">Google Images</a></h3>
-				</section>
-			</div>
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>
