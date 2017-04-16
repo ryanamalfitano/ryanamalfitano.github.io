@@ -1,0 +1,14 @@
+/* CSS Document */
+
+img {
+    display: block;
+    margin: auto;
+}
+
+blockquote {
+    -webkit-margin-before: 1em !important;
+    -webkit-margin-after: 1em !important;
+    -webkit-margin-start: 40px !important;
+    -webkit-margin-end: 40px !important;
+    font-style: italic !important;
+}
