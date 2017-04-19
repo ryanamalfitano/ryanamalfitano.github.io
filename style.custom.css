@@ -1,5 +1,10 @@
 /* CSS Document */
 
+h1 {
+    margin: 50px auto 10px;
+    border-bottom: 3px solid #333;
+}
+
 img {
     display: block;
     margin: auto;
@@ -11,4 +16,20 @@ blockquote {
     -webkit-margin-start: 40px !important;
     -webkit-margin-end: 40px !important;
     font-style: italic !important;
+}
+
+div.images {
+    width: 100%;
+    margin: 30px auto;
+}
+
+div.images .onethird {
+    display: inline-block;
+    width: 33%;
+}
+
+div.images span {
+    display: block;
+    text-align: center;
+    font-style: italic;
 }
