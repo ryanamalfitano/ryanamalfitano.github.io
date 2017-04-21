@@ -9,16 +9,29 @@
     border: none;
 }
 
+.float-left {
+    float: left;
+    
+    width: 300px;
+    max-width: 42%;
+    
+    margin: 0px 15px 2px 0px;
+    border: 1px solid #333;
+}
+
 body {
     font-family: Montserrat, sans-serif;
     background: url(background-wood.jpg);
 }
 
 .container {
-    background: #FFF2E1;
+    width: auto;
+    max-width: 980px;
+    
     margin: 50px auto 75px;
     padding: 20px;
     
+    background: #FFF2E1;
     box-shadow: 3px 3px 10px 0px #000;
 }
 
@@ -62,6 +75,7 @@ h1 {
 
 img {
     display: block;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -83,6 +97,7 @@ blockquote {
 div.images {
     width: 100%;
     margin: 30px auto;
+    font-size: 0px;
 }
 
 div.images .onethird {
@@ -94,4 +109,15 @@ div.images span {
     display: block;
     text-align: center;
     font-style: italic;
+}
+
+@media only screen and (max-device-width : 600px) {
+    .float-left {
+        float: none;
+        
+        width: 100%;
+        max-width: 100%;
+        
+        margin: 0px 0px 5px 0px;
+    }
 }
