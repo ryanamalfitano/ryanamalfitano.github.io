@@ -1,0 +1,123 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Playball');
+
+.nomargin {
+    margin: 0 auto;
+}
+
+.noborder {
+    border: none;
+}
+
+.float-left {
+    float: left;
+    
+    width: 300px;
+    max-width: 42%;
+    
+    margin: 0px 15px 2px 0px;
+    border: 1px solid #333;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: url(background-wood.jpg);
+}
+
+.container {
+    width: auto;
+    max-width: 980px;
+    
+    margin: 50px auto 75px;
+    padding: 20px;
+    
+    background: #FFF2E1;
+    box-shadow: 3px 3px 10px 0px #000;
+}
+
+header {
+    background: url(background-marble.jpg);
+    background-size: cover;
+    
+    padding: 20px 0;
+    color: #FFF;
+    
+    box-shadow: 0px 0px 20px 10px #000;
+}
+
+header * {
+    text-align: center;
+}
+
+header nav {
+    margin: 10px auto;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: auto 15px;
+}
+
+header nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: Playball, cursive;
+    margin: 50px auto 10px;
+    border-bottom: 3px solid #333;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+blockquote {
+    -webkit-margin-before: 1em !important;
+    -webkit-margin-after: 1em !important;
+    -webkit-margin-start: 40px !important;
+    -webkit-margin-end: 40px !important;
+    font-style: italic !important;
+    
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    padding: 10px 0px;
+    
+    border-top: 1px solid #bfb5a8;
+    border-bottom: 1px solid #bfb5a8;
+}
+
+div.images {
+    width: 100%;
+    margin: 30px auto;
+    font-size: 0px;
+}
+
+div.images .onethird {
+    display: inline-block;
+    width: 33%;
+}
+
+div.images span {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+@media only screen and (max-device-width : 600px) {
+    .float-left {
+        float: none;
+        
+        width: 100%;
+        max-width: 100%;
+        
+        margin: 0px 0px 5px 0px;
+    }
+}
