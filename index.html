@@ -18,82 +18,36 @@
         <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     </head>
-    <body>
+    
+    <body class="frontpage">
         <header>
-            <h2>Ryan Amalfitano</h2>
-            <h1 class="nomargin noborder">Ryan Amalfitano</h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="blog.html">Academic Blog</a></li>
-                    <li><a href="https://docs.google.com/presentation/d/1Rrwh3PtayMW9-40rjDvdTPkEBEREYjTdJCt8aShajlM/edit?usp=sharing" target="_blank">Collaborative Project</a></li>
-                    <li><a href="reveal.js/" target="_blank">Research Presentation</a></li>
-                </ul>
-            </nav>
+            <h1>Ryan Amalfitano</h2>
         </header>
-        <div class="container">
-            <h1 class="nomargin">About Me</h1><br/>
+        
+        <div id="frontpage">
+            <a href="web.html" id="web" class="onehalf">
+                <h1>Practical Web Development</h1>
+                <p>As an experienced Web Developer, I have skills and real-world experience in site construction,
+                   design, and optimization for building functional, flexible, and findable websites.</p>
+                
+                <p>Whether it's custom-built PHP applications, CMS-based sites, single-page brochure-style sites,
+                   database structures, or SEO audits, I've got the knowledge of modern web design techniques and
+                   languages to make the best site possible.</p>
+            </a>
             
-            <img class="float-left" src="reveal.js/img/routefinder4.jpg" alt="Routefinder" />
-            
-            <p>Hi, I'm Ryan Amalfitano, a current student at Brock University in St. Catharines, and I'm in my second year of the Interactive Arts and Sciences (IASC) program, which has strong links to the Digital Humanities (DH). The research specialization within DH that I find most interesting is text analysis and data visualization: a project within these fields that I would consider taking part in might be something like the Z-Axis Tool; some kind of text analysis and data visualization tool which can display and represent text analysis and research results in an interesting and coherent way. Some of my existing projects have already included results from text analyses and data visualizations, including my Academic Blog, in which I used the tool Voyant to find the most commonly used words in texts, which supported the argument I made within that project. In the future, I may take my work in other directions, such as perhaps combining text analysis and data visualization with geospatial analysis, to link specific words and terms to the corresponding geographical locations that they refer to or are linked to (again, like Z-Axis – where a story was taking place when a certain word was used), and include that within the visualization.</p>
-            
-            <h1>Academic Blog - Defining Digital Humanities</h1>
-            
-            <br/>
-            
-            <a href="cirrus-klien-gold.png" data-featherlight="image" target="_blank"><img alt="Klein/Gold Cirrus" src="cirrus-klien-gold.png" /></a>
-            
-            <h3>Abstract</h3>
-            <p>In this blog post, I examine two articles written by prominent “DHers”: What Is Digital Humanities and What’s It Doing in English Departments? By Matthew Kirschenbaum in 2012, and Digital Humanities: The Expanded Field by Lauren Klein and Matthew Gold in 2016. These articles both argue their own views on the origin of Digital Humanities, with Kirschenbaum focusing on the history of DH and its origins withing English departments, and Klien/Gold leaning more towards DH's true origins and the meaning of the term Digital Humanities. Through these two articles, I created an academic blog post that addresses both of these views, and compares and contrasts the points behind each one, exposing their pros and cons, and coming to a conclusion about the nature of DH and the validity of both Kirschenbaum's, and Klein/Gold's viewpoints, as well as offering my own opinion on which of the two outlooks I agree with more, and why.</p>
-            
-            <p>I feel that arguments such as those that Kirschenbaum and Klein/Gold present are of great significance to the field of Digital Humanities. Being such a new and immature discipline, it's easy for some works to blur the line between what is and what is not DH; such an occurrence should not simply be dismissed as a semantic issue, but rather addressed seriously as an opportunity to further define DH work. This kind of confusion is no doubt natural for a new discipline, and I believe that such strongly-rooted disciplines as English and History also had and continue to have such field-defining arguments, especially when they were considered new disciplines so long ago.</p>
-            
-            <br/>
-            
-            <h3>Research Timeline</h3>
-            <p>My Academic Blog evolved in several ways from when I began researching it to when I finally posted it here. At first, I struggled to find an idea on what to write about and how to analyse it in a meaningful way. I decided to address Kirschenbaum's article, as the nature of DH itself as a topic definitely resonated with me. In looking for other articles to compare Kirschenbaum's opinion with, Klein/Gold's article seemed like the perfect choice, as it directly referenced Kirschenbaum's article and presented arguments that strove to explicitly dispute his views on the origins of DH and its prominent place within English departments. With these articles selected, I began to write out my own analysis and sought out DH-based tools to support this. The text analysis tool Voyant seemed to offer a great analysis of the language used in both articles, allowing me to compare their differing use of words and how they related to each of the authors' views on DH's origins and definition. With these articles and the text analysis results from Voyant, I went on to craft the first version of my blog post.</p>
-            
-            <p>Upon submitting the post to my instructor, I received some valuable feedback on how to improve it even further. Although the post was well-written and showed a clear understanding of the articles it referenced, it was lacking in terms of my own presence and opinions. Thus, I added another short paragraph near the end of the post, presenting my opinion and outlook on the arguments that Kirschenbaum and Klein/Gold present. This is the final version of the academic blog, and the one you can read via the link below.</p>
-            
-            <br/>
-            
-            <a href="https://ryanamalfitano.github.io/blog.html">Academic Blog</a>
-            
-            <h1>Collaborative Project</h1>
-            
-            <br/>
-            
-            <h3>Project Description</h3>
-            <p>My Collaborative Project (with John Mattis, Jonathan Brenders, and Nicole Boccia) was a team presentation focused on the Scalar online publishing tool. Our presentation covered the basics of Scalar, its uses, as well as its history. Our team introduced the class to the Alliance for Networking Visual Culture (or ANVC), the team responsible for creating Scalar. We also went over some of the similarities and differences between Scalar and other publishing tools, and showed a Scalar test page to the site to show off some of its capabilities. We found that Scalar had numerous tools, some familiar and some unique, which allowed for a great degree of freedom in the creation of digital content.</p>
-            
-            <br/>
-            
-            <h3>Collaboration Statement</h3>
-            <p>Personally, my approach to collaborative scholarship is one of professionalism and efficiency. I tend to prefer assigning the project's components to team members based on each member's individual skills and expertise, and working together to solve problems or remove obstacles that block the team's continued progress. For example, within the Collaborative Project, our team split up the work based on each member's skills. As a web developer and expert with the WordPress digital content publishing tool (a similar tool to Scalar), I took on the role of researcher, and set up the Scalar test page, as well as evaluated some of its capabilities, as my previous skills and experience allowed me to do so most efficiently out of all of our team's members.</p>
-            <p>In my opinion, collaboration can enrich any project and any team, regardless of their objective. Collaboration between scholars allows them to share ideas and opinions, come to new conclusions, and present those conclusions with their combined experience and skill sets. As explained above, my own personal approach to collaborative scholarship focuses on professionalism and efficiency. My workflow within teams typically goes something like this: go over the project's objectives, discuss the team's own interpretation of the project and establish a direction, and divide up the work between members based on their skills and experience. Collaborative scholarship can help a team reach their goals via the combined expertise of all team members involved, and it is a defining factor in the success of any team-based or collaborative project. You can view my team's collaborative project via the link below.</p>
-            
-            <br/>
-            
-            <a href="https://docs.google.com/presentation/d/1Rrwh3PtayMW9-40rjDvdTPkEBEREYjTdJCt8aShajlM/edit?usp=sharing">Collaborative Project</a>
-            
-            <div class="images">
-                <a href="collaborative-project1.png" data-featherlight="image" target="_blank"><img src="collaborative-project1.png" alt="Collaborative Project Work 1" class="onethird" /></a>
-                <a href="collaborative-project2.png" data-featherlight="image" target="_blank"><img src="collaborative-project2.png" alt="Collaborative Project Work 2" class="onethird" /></a>
-                <a href="collaborative-project3.png" data-featherlight="image" target="_blank"><img src="collaborative-project3.png" alt="Collaborative Project Work 3" class="onethird" /></a>
-                <span>Here are some images of the work I did on the project. Above is a screenshot of one of my slides as well as two screenshots of the test page.</span>
-            </div>
-            
-            <h1>Research Presentation</h1>
-            
-            <p>Below is the link to my Research Presentation, a solo project in which I gave a Pecha Kucha-style presentation to the class, introducing some early examples of GPS-like navigation technology, including the Plus Fours Routefinder and Iter Auto.</p>
-            
-            <br/>
-            
-            <a href="reveal.js/">Research Presentation</a>
-            
-            <br/>
-            <br/>
+            <a href="game.html" id="game" class="onehalf">
+                <h1>Game Programming and Writing</h1>
+                <p>As a New Media student, I have gained practical programming skills, game development and project
+                   management experience, and knowledge in script writing and analysis.</p>
+                
+                <p>From turn-based fighting games to interactive essays, I've tried my hand at several different genres
+                   and game styles, gaining knowledge in C++ and WebGL programming along the way. I am also studying
+                   Unity and can use my previous web expertise to design web-based games effortlessly.</p>
+            </a>
         </div>
     </body>
+    
+    <footer>
+    	<script src="load.js"></script>
+    </footer>
 </html>
