@@ -1,5 +1,9 @@
-/* Import Fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Coda|Press+Start+2P|Source+Sans+Pro');
+
+/* ^ Font Imports ^ */
+/*------------------------------------------------------------*/
+/* v Global Styles v */
 
 .nomargin {
     margin: 0 auto;
@@ -21,7 +25,6 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background: url(background-wood.jpg);
 }
 
 .container {
@@ -35,55 +38,44 @@ body {
     box-shadow: 3px 3px 10px 0px #000;
 }
 
-.frontpage header {
-    background: none;
-    display: inline;
-}
+/* ^ Global Styles ^ */
+/*------------------------------------------------------------*/
+/* v Header Styles v */
 
 header {
-    background: url(background-marble.jpg);
-    background-size: cover;
-    
-    padding: 20px 0;
-    color: #FFF;
-    
-    box-shadow: 0px 0px 20px 10px #000;
-}
-
-header * {
+	position: absolute;
+	top: -20px;
+	
+	display: inline;
+	width: 245px;
+	
+	left: 50%;
+	margin-left: -122px;
+	padding: 20px 0;
+	
+	color: #FFF;
     text-align: center;
+	background: none;
 }
 
-header nav {
-    margin: 10px auto;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin: auto 15px;
-}
-
-header nav ul li a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
+/* ^ Header Styles ^ */
+/*------------------------------------------------------------*/
+/* v Body Styles v */
 
 div#frontpage {
     width: 100%;
     height: 100%;
     font-size: 0px;
-    background: #EEE;
+	
+    background: #C88C0A url("images/background-circuit-mix.jpg") center center no-repeat;
+	background-size: cover;
 }
 
 div#frontpage a {
     display: inline-block;
     width: 50%;
     min-height: 100%;
-    padding: 50px 5%;
+    padding: 15% 5% 0;
     
     text-align: center;
     font-size: 16px;
@@ -98,31 +90,46 @@ div#frontpage a:hover {
 
 div#frontpage a p {
     margin: 0px auto;
-    padding: 15px 15px;
+    padding: 15px;
     
     color: #FFF;
     background: rgba(50, 50, 50, 0.8);
 }
 
 div#frontpage a h1 { 
-    
+	margin: 0px auto;
+	padding: 15px;
+	
+	color: #FFF;
+    background: rgba(50, 50, 50, 0.8);
+	border: none;
 }
 
-div#frontpage a#web {
-    background: #C88C0A url("background-circuit1.jpg") left center;
+div#frontpage a#game h1 { font-family: 'Press Start 2P', cursive; font-size: 20px; white-space: pre; }
+
+div#web-main,
+div#game-main {
+	padding: 5%, 5%, 0;
 }
 
-div#frontpage a#game {
-    background: #5A37F5 url("background-circuit2.jpg") right center;
+div#web-main {
+    background: #C88C0A url("images/background-circuit-gold.jpg") center center no-repeat;
+	background-size: cover;
 }
 
-div#frontpage a#game h1 { font-family: 'Press Start 2P', cursive; font-size: 24px; }
+div#game-main {
+    background: #5A37F5 url("images/background-circuit-blue.jpg") center center no-repeat;
+	background-size: cover;
+}
 
 h1 {
     font-family: 'Coda', cursive;
     margin: 50px auto 10px;
     border-bottom: 3px solid #333;
 }
+
+div#game-main h1 { color: #5A37F5; }
+div#web-main h1 { color: #C88C0A; }
 
 img {
     display: block;
@@ -172,3 +179,108 @@ div.images span {
         margin: 0px 0px 5px 0px;
     }
 }
+
+/* ^ Body Styles ^ */
+/*------------------------------------------------------------*/
+/* v Project Popup Styles v */
+
+ul#projects {
+	padding: 200px 0 0;
+    text-align: center;
+}
+
+ul#projects > li {
+    position: relative;
+    display: inline-block;
+    
+    max-width: 100%;
+    width:  400px;
+    height: 400px;
+    
+    margin: 25px;
+    border: 2px solid #333;
+}
+
+ul#projects > li > label {
+    position: absolute;
+    top:  0px;
+    left: 0px;
+    
+    width: 100%;
+    height: 100%;
+    
+    transition: opacity 0.3s;
+    z-index: 5;
+}
+
+ul#projects > li > label > img {
+    width: 100%;
+    height: 100%;
+}
+
+ul#projects > li > aside {
+    position: absolute;
+    top:  0px;
+    left: 0px;
+    
+    width:  100%;
+    height: 100%;
+    
+    padding: 5%;
+	background: #FFF;
+    overflow: hidden;
+}
+
+ul#projects > li > aside > div > h1 {
+    margin: 0px;
+    font-size: 32px;
+}
+
+ul#projects > li > aside > div > h2 {
+    margin: 0px 0px 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+ul#projects > li > aside > div > p {
+	font-size: 18px;
+    margin-top: 0px;
+    color: #333;
+}
+
+ul#projects > li > aside + a {
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    
+    width: 100%;
+    text-align: center;
+}
+
+ul#projects > li > input:checked + label {
+    opacity: 0.10;
+}
+
+@media (max-width: 625px) {
+    ul#projects > li {
+        width:  80vw;
+        height: 80vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    ul#projects > li > aside > div > h1 {
+        font-size: 26px;
+    }
+    
+    ul#projects > li > aside > div > h2 {
+        font-size: 18px;
+    }
+    
+    ul#projects > li > aside > div > p {
+        font-size: 14px;
+    }
+}
+
+/* ^ Project Popup Styles ^ */
+/*------------------------------------------------------------*/
