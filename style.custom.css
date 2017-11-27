@@ -182,6 +182,35 @@ div.images span {
 
 /* ^ Body Styles ^ */
 /*------------------------------------------------------------*/
+/* v Footer Styles v */
+
+body footer {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    
+	width: 245px;
+	
+	left: 50%;
+	margin-left: -122px;
+	padding: 15px;
+	
+	color: #FFF;
+    text-align: center;
+    font-size: 18px;
+	background: rgba(50, 50, 50, 0.8);
+}
+
+body footer a {
+    color: #FFF;
+}
+
+footer#scripts {
+    display: none;
+}
+
+/* ^ Footer Styles ^ */
+/*------------------------------------------------------------*/
 /* v Project Popup Styles v */
 
 ul#projects {
