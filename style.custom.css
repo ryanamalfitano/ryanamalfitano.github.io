@@ -279,11 +279,19 @@ ul#projects > li > aside > div > p {
 
 ul#projects > li > aside + a {
     position: absolute;
-    bottom: -25px;
-    left: 0px;
+    bottom: -30px;
+    left: -2px;
     
+    display: block;
+    box-sizing: content-box;
     width: 100%;
+    padding: 0 2px;
+    
     text-align: center;
+    font-size: 20px;
+    color: #FFF;
+    
+    background: rgba(50, 50, 50, 0.8);
 }
 
 ul#projects > li > input:checked + label {
