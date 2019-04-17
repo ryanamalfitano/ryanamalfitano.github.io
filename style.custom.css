@@ -67,15 +67,16 @@ div#frontpage {
     height: 100%;
     font-size: 0px;
 	
-    background: #C88C0A url("images/background-circuit-mix.jpg") center center no-repeat;
+    /*background: #C88C0A url("images/background-circuit-mix.jpg") center center no-repeat;*/
+    background: #292929;
 	background-size: cover;
 }
 
 div#frontpage a {
-    display: inline-block;
+    display: block;
     width: 50%;
-    min-height: 100%;
-    padding: 15% 5% 0;
+    margin: auto;
+    padding: 7% 5% 0;
     
     text-align: center;
     font-size: 16px;
@@ -89,6 +90,7 @@ div#frontpage a:hover {
 }
 
 div#frontpage a p {
+    font-family: Consolas, monospace;
     margin: 0px auto;
     padding: 15px;
     
@@ -105,11 +107,16 @@ div#frontpage a h1 {
 	border: none;
 }
 
-div#frontpage a#game h1 { font-family: 'Press Start 2P', cursive; font-size: 20px; white-space: pre; }
+div#frontpage a#game h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #6AFFAD;
+}
 
-div#web-main,
-div#game-main {
-	padding: 5%, 5%, 0;
+section#web-main,
+section#game-main {
+    height: auto !important;
+	padding: 0, 5%, 0;
 }
 
 div#web-main {
@@ -214,7 +221,7 @@ footer#scripts {
 /* v Project Popup Styles v */
 
 ul#projects {
-	padding: 200px 0 0;
+	padding: 10px 0 0;
     text-align: center;
 }
 
@@ -223,8 +230,8 @@ ul#projects > li {
     display: inline-block;
     
     max-width: 100%;
-    width:  400px;
-    height: 400px;
+    width:  300px;
+    height: 300px;
     
     margin: 25px;
     border: 2px solid #333;
@@ -261,20 +268,26 @@ ul#projects > li > aside {
 }
 
 ul#projects > li > aside > div > h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    
     margin: 0px;
-    font-size: 32px;
 }
 
 ul#projects > li > aside > div > h2 {
-    margin: 0px 0px 10px;
-    font-size: 24px;
+    font-family: Consolas, monospace;
+    font-size: 16px;
     color: #333;
+    
+    margin: 0px 0px 10px;
 }
 
 ul#projects > li > aside > div > p {
-	font-size: 18px;
-    margin-top: 0px;
+    font-family: Consolas, monospace;
+	font-size: 16px;
     color: #333;
+
+    margin-top: 0px;
 }
 
 ul#projects > li > aside + a {
