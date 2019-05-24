@@ -20,22 +20,22 @@
     </head>
     
     <body class="frontpage">
-        <header>
-            <h1>Ryan Amalfitano</h2>
-        </header>
-
         <div id="frontpage">
+            <header>
+                <h1>Ryan Amalfitano;</h1>
+            </header>
+
             <!--<a href="web.html" id="web" class="onehalf">
-        <h1>Practical Web Development</h1>
-        <p>As an experienced Web Developer, I have skills and real-world experience in site construction,
-           design, and optimization for building functional, flexible, and findable websites.</p>
+                <h1>Practical Web Development</h1>
+                <p>As an experienced Web Developer, I have skills and real-world experience in site construction,
+                   design, and optimization for building functional, flexible, and findable websites.</p>
 
-        <p>Whether it's custom-built PHP applications, CMS-based sites, single-page brochure-style sites,
-           database structures, or SEO audits, I've got the knowledge of modern web design techniques and
-           languages to make the best site possible.</p>
-    </a>-->
+                <p>Whether it's custom-built PHP applications, CMS-based sites, single-page brochure-style sites,
+                   database structures, or SEO audits, I've got the knowledge of modern web design techniques and
+                   languages to make the best site possible.</p>
+            </a>-->
 
-            <a id="game" class="onehalf">
+            <div id="game" class="onehalf">
                 <h1>
                     Game Programmer
                 </h1>
@@ -53,7 +53,7 @@
                 </p><p>
                     Favourite game: Dark Souls 1.
                 </p>
-            </a>
+            </div>
 
 
             <section id="game-main">
@@ -78,7 +78,7 @@
                                 </p>
                             </div>
                         </aside>
-                        <a href="files/Game Analysis 2.exe" target="_blank">Download Game</a>
+                        <a href="files/Game Analysis 2.zip" target="_blank">Download Game</a>
                     </li>
 
                     <li>
@@ -86,7 +86,7 @@
                         <label for="proj2"><img src='images/projects/Mercs.jpg' /></label>
                         <aside>
                             <div>
-                                <h1>Mercs:<br/>Triple Threat</h1>
+                                <h1>Mercs:<br />Triple Threat</h1>
                                 <h2>Turn-Based Combat on an Axis</h2>
 
                                 <p>
@@ -97,7 +97,7 @@
                                 <p>
                                     It's like
                                     rock-paper-scissors, but with badass mercenaries
-                                    instead of household objects (and a rock).
+                                    instead of random objects.
                                 </p>
                             </div>
                         </aside>
@@ -118,8 +118,8 @@
                                 </p>
 
                                 <p>
-                                    It's a split-screen strategy game in which two players
-                                    compete to be the first one to solve the Y2K bug.
+                                    It's a split-screen puzzle game where two players
+                                    compete to solve the Y2K bug first.
                                 </p>
                             </div>
                         </aside>
@@ -130,12 +130,18 @@
         </div>
 
         <footer>
-            <a href="files/Resume.pdf">Resume</a><br />
-            <a href="files/Reference Sheet.pdf">References</a>
+            <a href="files/Resume.pdf" target="_blank">Resume</a>
+            <a href="#"><label for="referencetoggle">References</label></a>
+            <input id="referencetoggle" name="referencetoggle" type="checkbox" />
+            <div id="referencepopup">
+                <a href="files/Justin Howe Reference Letter.pdf" target="_blank">Reference Letter: Justin Howe</a>
+                <a href="files/Justin Howe Reference Letter.pdf" target="_blank">Reference Letter: Alex Christie</a>
+                <a href="files/Reference Sheet.pdf" target="_blank">Reference Contact Info</a>
+            </div>
         </footer>
+
+        <div id="scripts">
+            <script src="load.js"></script>
+        </div>
     </body>
-    
-    <footer id="scripts">
-    	<script src="load.js"></script>
-    </footer>
 </html>
