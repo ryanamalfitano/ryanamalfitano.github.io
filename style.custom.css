@@ -214,6 +214,11 @@ body footer a > label {
     cursor: pointer;
 }
 
+body footer a > img {
+    width: 30px;
+    height: 30px;
+}
+
 body footer input#referencetoggle {
     display: none;
 }
