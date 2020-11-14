@@ -1,0 +1,643 @@
+/* ------------ Main Stylesheet ------------ */
+/* ----------------------------------------- */
+/* Table of Contents                         */
+/* (CTRL/CMND + F your way to victory)       */
+/* [General]                                 */
+/* [Header]                                  */
+/* o [Navbar]                                */
+/* [Main Content]                            */
+/* o [Featured Section]                      */
+/* o [Search Section]                        */
+/* o [Products Section]                      */
+/* o [Stats Section]                         */
+/* o [News Section]                          */
+/* o [Submit Section]                        */
+/* [Footer]                                  */
+/* o [Sections]                              */
+/* o [Copyright]                             */
+/* [Media Queries]                           */
+
+/* ----------------------------------------- */
+/* [General]                                 */
+/* ----------------------------------------- */
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10px;
+}
+
+body { margin: 0; }
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feed > * {
+    flex-basis: 31%;
+    margin-bottom: 3%;
+}
+
+.button {
+    padding: 8px 12px;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    border-width: 0;
+    border-radius: 5px;
+    background: #666666;
+
+    cursor: pointer;
+}
+
+.red {
+    background: #E63946;
+}
+
+.red.outline {
+    background: rgba(0,0,0,0);
+    color: #E63946;
+    border: 2px solid #E63946;
+}
+
+/* ----------------------------------------- */
+/* [Header]                                  */
+/* ----------------------------------------- */
+
+body > header {
+    position: fixed;
+    width: 100%;
+    background: #333333;
+    z-index: 90;
+}
+
+body > header > div {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px 20px;
+    margin: 0 auto;
+
+    color: #FFFFFF;
+}
+
+body > header > div > h1 {
+    margin: 0 auto 0 0;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+/* ----------------------------------------- */
+/* o [Navbar]                                */
+/* ----------------------------------------- */
+
+body > header > div > ul {
+    padding: 0;
+}
+
+body > header > div > ul > li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+body > header > div > ul > li > a {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body > header > div > ul > li > a:hover { text-decoration: underline; }
+
+/* ----------------------------------------- */
+/* o [End Navbar]                            */
+/* ----------------------------------------- */
+
+body > header > div > button {
+    padding: 0 30px;
+    background: none;
+    border: none;
+}
+
+body > header > div > button > a {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body > header > div > button.menu {
+    display: none;
+    border-right: 1px solid #666666;
+}
+
+body > header > div > button.search {
+    border-left: 1px solid #666666;
+}
+
+body > header > div > button.menu > a,
+body > header > div > button.search > a {
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    font-size: 0;
+    background: center / contain no-repeat;
+    transition: transform 0.3s;
+}
+
+body > header > div > button.menu > a { background-image: url(images/icon-menu2.png); }
+body > header > div > button.search > a { background-image: url(images/icon-search2.png); }
+
+body > header > div > button > a:hover { text-decoration: underline; }
+
+body > header > div > button.menu > a:hover,
+body > header > div > button.search > a:hover { transform: scale(1.25); }
+
+/* ----------------------------------------- */
+/* [Main Content]                            */
+/* ----------------------------------------- */
+
+body > main {
+    padding: 60px 5px 0;
+}
+
+body > main > section.container { margin-bottom: 30px; }
+
+/* ----------------------------------------- */
+/* o [Featured Section]                      */
+/* ----------------------------------------- */
+
+body > main > #section-featured {
+    position: relative;
+    height: 40vh;
+
+    background: url(images/car-bmwx4-1.jpg) center / cover no-repeat;
+}
+
+body > main > #section-featured > img {
+    width: 100%;
+}
+
+body > main > #section-featured > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+    padding: 30px;
+
+    background: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+}
+
+body > main > #section-featured > div > h1 {
+    flex-basis: 100%;
+    margin: 0 0 15px;
+    font-size: 2.4rem;
+}
+
+body > main > #section-featured > div > h4 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #CCCCCC;
+}
+
+body > main > #section-featured > div > h4.price { font-weight: bold; }
+
+body > main > #section-featured > div > h4:not(:last-of-type)::after {
+    content: "•";
+    margin: 0 10px;
+}
+
+/* ----------------------------------------- */
+/* o [Search Section]                        */
+/* ----------------------------------------- */
+
+body > main > #section-search {
+    background: #F8F8F8;
+}
+
+body > main > #section-search > form {
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+body > main > #section-search > form > select,
+body > main > #section-search > form > input {
+    padding: 10px 12px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body > main > #section-search > form > select { border: 1px solid #EEEEEE; }
+
+/* ----------------------------------------- */
+/* o [Products Section]                      */
+/* ----------------------------------------- */
+
+body > main > #section-products aside.filters {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+}
+
+body > main > #section-products aside.filters > button {
+    padding: 8px 12px;
+    background: #EEEEEE;
+    border: none;
+    margin: 0 5px;
+
+    cursor: pointer;
+
+    opacity: 0.33;
+}
+
+body > main > #section-products aside.filters > button.active {
+    opacity: 1;
+}
+
+body > main > #section-products aside.filters > button.filter-grid,
+body > main > #section-products aside.filters > button.filter-list {
+    width: 32px;
+    padding: 8px 8px;
+    font-size: 0;
+}
+
+body > main > #section-products aside.filters > button.filter-grid::before,
+body > main > #section-products aside.filters > button.filter-list::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background: center / contain no-repeat;
+    opacity: 0.5;
+}
+
+body > main > #section-products aside.filters > button.filter-grid::before { background-image: url(images/icon-filters-grid.png); }
+body > main > #section-products aside.filters > button.filter-list::before { background-image: url(images/icon-filters-list.png); }
+
+body > main > #section-products .feed > div {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #DDDDDD;
+    overflow: hidden;
+}
+
+body > main > #section-products .feed > div.sold::before {
+    content: "Sold";
+    padding: 10px 50px;
+
+    position: absolute;
+    top: 10px;
+    left: -40px;
+
+    font-size: 1.6rem;
+    color: #FFFFFF;
+
+    background: #FA726C;
+    transform: rotateZ(-45deg);
+}
+
+body > main > #section-products .feed > div > div {
+    display: flex;
+    align-items: end;
+
+    height: 250px;
+    background: url(images/car-placeholder.jpg) center / contain no-repeat;
+}
+
+body > main > #section-products .feed > div > div.volkswagen   { background-image: url(images/car-volkswagengolf-1.jpg); }
+body > main > #section-products .feed > div > div.subaru       { background-image: url(images/car-subaruwrx-1.jpg); }
+body > main > #section-products .feed > div > div.infiniti     { background-image: url(images/car-infinitiq50-1.jpg); }
+body > main > #section-products .feed > div > div.mercedesbenz { background-image: url(images/car-mercedesml-1.jpg); }
+body > main > #section-products .feed > div > div.volvo        { background-image: url(images/car-volvov40-1.jpg); }
+body > main > #section-products .feed > div > div.audi         { background-image: url(images/car-audittrs-1.jpg); }
+
+body > main > #section-products .feed > div > div > h4 {
+    flex-basis: 100%;
+    padding: 30px 20px 10px;
+    margin: 0;
+
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.8));
+}
+
+body > main > #section-products .feed > div > h1,
+body > main > #section-products .feed > div > p { padding: 0 20px; }
+
+body > main > #section-products .feed > div > h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+
+body > main > #section-products .feed > div > p {
+    font-size: 1.4rem;
+    color: #666666;
+}
+
+body > main > #section-products .feed > div > p::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+
+    background: center / contain no-repeat;
+    opacity: 0.4;
+    vertical-align: bottom;
+}
+
+body > main > #section-products .feed > div > p.date::before { background-image: url(images/icon-details-date.png); }
+body > main > #section-products .feed > div > p.mileage::before { background-image: url(images/icon-details-mileage.png); }
+body > main > #section-products .feed > div > p.power::before { background-image: url(images/icon-details-power.png); }
+
+
+body > main > #section-products aside.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+body > main > #section-products aside.pagination > button {
+    padding: 8px 12px;
+    background: #EEEEEE;
+    border: none;
+    margin: 0 5px;
+
+    cursor: pointer;
+}
+
+body > main > #section-products aside.pagination > button.current {
+    opacity: 0.33;
+    pointer-events: none;
+}
+
+/* ----------------------------------------- */
+/* o [Stats Section]                         */
+/* ----------------------------------------- */
+
+body > main > #section-stats {
+    background: #F8F8F8;
+    margin-bottom: 30px;
+}
+
+body > main > #section-stats > div {
+    display: flex;
+    padding: 50px 0;
+}
+
+body > main > #section-stats > div > div {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+body > main > #section-stats > div > div > h1 {
+    margin: 0;
+    font-size: 3.6rem;
+}
+
+body > main > #section-stats > div > div > h2 {
+    margin: 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #999999;
+}
+
+/* ----------------------------------------- */
+/* o [News Section]                          */
+/* ----------------------------------------- */
+
+body > main > #section-news > h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #333333;
+}
+
+body > main > #section-news > .feed > div {
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #DDDDDD;
+    overflow: hidden;
+}
+
+body > main > #section-news > .feed > div > img {
+    max-width: 100%;
+}
+
+body > main > #section-news > .feed > div > h1,
+body > main > #section-news > .feed > div > p { padding: 0 20px; }
+
+body > main > #section-news > .feed > div > h1 {
+    font-size: 1.6rem;
+    color: #333333;
+}
+
+body > main > #section-news > .feed > div > p {
+    font-size: 1.4rem;
+    color: #666666;
+}
+
+body > main > #section-news > .feed > div > p:not(.author)::after { content: " ..."; }
+
+body > main > #section-news > .feed > div > p.author::before {
+    content: "";
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 0 5px 0 0;
+
+    background: url(images/profile-john-doe.jpg) center / contain no-repeat;
+    vertical-align: middle;
+}
+
+/* ----------------------------------------- */
+/* o [Submit Section]                        */
+/* ----------------------------------------- */
+
+body > main > #section-submit {
+    text-align: center;
+}
+
+/* ----------------------------------------- */
+/* [Footer]                                  */
+/* ----------------------------------------- */
+
+body > footer {
+    background: #333333;
+    color: white;
+}
+
+body > footer > div {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+/* ----------------------------------------- */
+/* o [Sections]                              */
+/* ----------------------------------------- */
+
+body > footer > div > section {
+    flex-basis: 31%;
+    padding: 0 1%;
+    font-size: 1.6rem;
+}
+
+body > footer > div > section > h1 {
+    font-size: 2.4rem;
+}
+
+body > footer > div > section a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body > footer > div > section a:hover { text-decoration: underline; }
+
+body > footer > div > section > ul.social-icons {
+    display: flex;
+    padding: 0;
+}
+
+body > footer > div > section > ul.social-icons > li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+body > footer > div > section > ul.social-icons > li:first-of-type { margin-left: 0; }
+
+body > footer > div > section > ul.social-icons > li > a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+
+    border: 8px solid #444444;
+    background: #444444 center / contain no-repeat;
+}
+
+body > footer > div > section > ul.social-icons > li > a.facebook   { background-image: url(images/icon-facebook2.png); }
+body > footer > div > section > ul.social-icons > li > a.twitter    { background-image: url(images/icon-twitter2.png); }
+body > footer > div > section > ul.social-icons > li > a.googleplus { background-image: url(images/icon-googleplus2.png); }
+body > footer > div > section > ul.social-icons > li > a.linkedin   { background-image: url(images/icon-linkedin2.png); }
+
+body > footer > div > section > ul.hours {
+    padding: 0;
+}
+
+body > footer > div > section > ul.hours > li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px 0;
+}
+
+body > footer > div > section > form {
+    display: flex;
+    overflow: hidden;
+
+    border-radius: 5px;
+}
+
+body > footer > div > section > form > input[type=email],
+body > footer > div > section > form > input[type=submit] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 0;
+}
+
+body > footer > div > section > form > input[type=email] {
+    flex-grow: 1;
+    font-size: 1.4rem;
+}
+
+/* ----------------------------------------- */
+/* o [Copyright]                             */
+/* ----------------------------------------- */
+
+body > footer > div#copyright {
+    width: 90%;
+    padding: 30px 5%;
+    background: #222222;
+    font-size: 1.6rem;
+    color: #AAAAAA;
+}
+
+/* ----------------------------------------- */
+/* [Media Queries]                           */
+/* ----------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .feed > * { flex-basis: 48%; }
+
+    body > header > div > button.menu {
+        display: block;
+        border-right: 1px solid #666666;
+    }
+
+    body > header > div > ul {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+
+        padding: 15px 20px;
+        text-align: center;
+        background: #222;
+
+        transition: transform 0.3s;
+        transform-origin: top;
+    }
+
+    body > header > div > ul:not(.active) {
+        transform: rotateX(90deg);
+    }
+
+    body > footer > div {
+        flex-wrap: wrap;
+    }
+    
+    body > footer > div > section {
+        flex-basis: 90%;
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .feed > * { flex-basis: 98%; }
+
+    body > main > #section-stats > div {
+        flex-wrap: wrap;
+    }
+    
+    body > main > #section-stats > div > div {
+        flex-basis: 50%;
+        margin: 10px 0;
+    }
+}

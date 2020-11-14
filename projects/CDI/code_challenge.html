@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test Car Dealership</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1>Test</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <button class="menu"><a href="">Menu</a></button>
+                <button class="login"><a href="">Login</a></button>
+                <button class="search"><a href="">Search</a></button>
+            </div>
+        </header>
+        <main>
+            <section id="section-featured">
+                <div>
+                    <h1>BMW X4</h1>
+                    <h4 class="price">$110,000</h4>
+                    <h4>05-2016</h4>
+                    <h4>0 miles</h4>
+                    <h4>190 kw (255 hp)</h4>
+                </div>
+            </section>
+            <section id="section-search" class="container">
+                <form id="form-search">
+                    <select name="make" id="form-search-make">
+                        <option selected disabled>Select Make</option>
+                        <option value="audi">Audi</option>
+                        <option value="bmw">BMW</option>
+                        <option value="infiniti">Infiniti</option>
+                        <option value="mercedesbenz">Mercedes Benz</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                    </select>
+                    <select name="model" id="form-search-model" disabled>
+                        <option selected disabled>Select Make First</option>
+                    </select>
+                    <select name="registration" id="form-search-registration">
+                        <option selected disabled>First Registration</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    <select name="mileage" id="form-search-mileage">
+                        <option selected disabled>Max Mileage</option>
+                        <option value="0 miles">0 miles</option>
+                        <option value="Up to 10,000 miles">Up to 10,000 miles</option>
+                        <option value="Up to 25,000 miles">Up to 25,000 miles</option>
+                        <option value="Up to 50,000 miles">Up to 50,000 miles</option>
+                        <option value="Up to 100,000 miles">Up to 100,000 miles</option>
+                        <option value="Up to 200,000 miles">Up to 200,000 miles</option>
+                    </select>
+                    <select name="price" id="form-search-price">
+                        <option selected disabled>Max Price</option>
+                        <option value="$10,000">$10,000</option>
+                        <option value="$20,000">$20,000</option>
+                        <option value="$30,000">$30,000</option>
+                        <option value="$40,000">$40,000</option>
+                        <option value="$50,000">$50,000</option>
+                        <option value="$60,000">$60,000</option>
+                    </select>
+                    <input type="submit" name="submit" id="form-search-submit" value="Show Results" class="red button" />
+                </form>
+            </section>
+            <section id="section-products" class="container">
+                <aside class="filters">
+                    <button class="filter-grid active">Grid</button>
+                    <button class="filter-list">List</button>
+                    <button class="filter-price">Price (low-high)</button>
+                </aside>
+                <div class="feed">
+                    <div class="sold">
+                        <div class="volkswagen">
+                            <h4>$22,000</h4>
+                        </div>
+                        <h1>Volkswagen Golf 2.5l</h1>
+                        <p class="date">07-2015</p>
+                        <p class="mileage">30,000 miles</p>
+                        <p class="power">130 kw (175 hp)</p>
+                    </div>
+                    <div>
+                        <div class="subaru">
+                            <h4>$28,500</h4>
+                        </div>
+                        <h1>Subaru WRX</h1>
+                        <p class="date">01-2016</p>
+                        <p class="mileage">10,000 miles</p>
+                        <p class="power">250 kw (335 hp)</p>
+                    </div>
+                    <div class="sold">
+                        <div class="infiniti">
+                            <h4>$35,000</h4>
+                        </div>
+                        <h1>Infiniti Q50</h1>
+                        <p class="date">05-2016</p>
+                        <p class="mileage">0 miles</p>
+                        <p class="power">190 kw (255 hp)</p>
+                    </div>
+                    <div>
+                        <div class="mercedesbenz">
+                            <h4>$36,000</h4>
+                        </div>
+                        <h1>Mercedes Benz ML (All Wheel Drive)</h1>
+                        <p class="date">09-2014</p>
+                        <p class="mileage">75,000 miles</p>
+                        <p class="power">210 kw (282 hp)</p>
+                    </div>
+                    <div>
+                        <div class="volvo">
+                            <h4>$42,000</h4>
+                        </div>
+                        <h1>Volvo V40 Cross Country</h1>
+                        <p class="date">05-2016</p>
+                        <p class="mileage">0 miles</p>
+                        <p class="power">110 kw (150 hp)</p>
+                    </div>
+                    <div>
+                        <div class="audi">
+                            <h4>$45,000</h4>
+                        </div>
+                        <h1>Audi TT RS</h1>
+                        <p class="date">03-2016</p>
+                        <p class="mileage">10,000 miles</p>
+                        <p class="power">185 kw (248 hp)</p>
+                    </div>
+                </div>
+                <aside class="pagination">
+                    <button class="current">1</button>
+                    <button>2</button>
+                    <button>&rArr;</button>
+                </aside>
+            </section>
+            <section id="section-stats">
+                <div class="container">
+                    <div>
+                        <h1>25</h1>
+                        <h2>Years In Business</h2>
+                    </div>
+                    <div>
+                        <h1>1,000+</h1>
+                        <h2>Cars Sold</h2>
+                    </div>
+                    <div>
+                        <h1>98%</h1>
+                        <h2>Customer Satisfaction</h2>
+                    </div>
+                    <div>
+                        <h1>10,000+</h1>
+                        <h2>Registered Users</h2>
+                    </div>
+                </div>
+            </section>
+            <section id="section-news" class="container">
+                <h2>Latest Car News</h2>
+                <div class="feed">
+                    <div>
+                        <img src="images/banner-news-1.jpg" alt="Pony Car" />
+                        <h1>50 years of pony-car style</h1>
+                        <p>Lorem ipsum dolor ist amte, consectetuer adipiscing eilt. Aenean commodo ligula egget</p>
+                        <p class="author"><img /> by John Doe</p>
+                    </div>
+                    <div>
+                        <img src="images/banner-news-2.jpg" alt="High HP Car" />
+                        <h1>Because 600 hp is not enough</h1>
+                        <p>Lorem ipsum dolor ist amte, consectetuer adipiscing eilt. Aenean commodo ligula egget</p>
+                        <p class="author">by John Doe</p>
+                    </div>
+                </div>
+            </section>
+            <section id="section-submit" class="container">
+                <button class="red button outline">Submit Your Vehicle &rArr;</button>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <section>
+                    <h1>Car Dealer Inc.</h1>
+                    <p>Address: <a href="https://www.google.com/maps/search/1+Fantasy+Road,+10100+Car+Haven,+USA/">1 Fantasy Road, 10100 Car Haven, USA</a></p>
+                    <p>Phone: <a href="tel:0800555123456">0800 555 123 456</a></p>
+                    <p>Email: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+                    <ul class="social-icons">
+                        <li><a class="facebook"   href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a class="twitter"    href="https://twitter.com/home" >Twitter</a></li>
+                        <li><a class="googleplus" href="https://www.google.com/"  >Google Plus</a></li>
+                        <li><a class="linkedin"   href="https://www.linkedin.com/">LinkedIn</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Opening Hours</h1>
+                    <ul class="hours">
+                        <li><span>Monday</span>    <span>9:00 - 18:00</span></li>
+                        <li><span>Tuesday</span>   <span>9:00 - 18:00</span></li>
+                        <li><span>Wednesday</span> <span>9:00 - 18:00</span></li>
+                        <li><span>Thursday</span>  <span>9:00 - 18:00</span></li>
+                        <li><span>Friday</span>    <span>9:00 - 18:00</span></li>
+                        <li><span>Saturday</span>  <span>9:00 - 12:00</span></li>
+                        <li><span>Sunday</span>    <span>closed</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Get the best deals first</h1>
+                    <form>
+                        <input type="email"  name="email"  id="form-newsletter-email"  placeholder="Your email address" />
+                        <input type="submit" name="submit" id="form-newsletter-submit" value="Subscribe" class="red button" />
+                    </form>
+                    <p>No worries. We don't spam, promise.</p>
+                </section>
+            </div>
+            <div id="copyright">
+                Copyright &copy; 2016 by Car Dealer Inc.
+            </div>
+        </footer>
+    </body>
+</html>
