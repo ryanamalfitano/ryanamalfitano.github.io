@@ -1,4 +1,4 @@
 .vs/
 ryan.code-workspace
-projects/CDI/design-challenge.kra~
-projects/CDI/design-challenge.kra
+*.kra
+*.kra~
