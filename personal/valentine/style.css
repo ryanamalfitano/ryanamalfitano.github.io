@@ -1,0 +1,109 @@
+﻿@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico');
+
+html,
+body {
+    margin: 0px;
+}
+
+body {
+    background: url("valentines-background.jpg");
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+body header {
+    position: relative;
+    margin-bottom: 200px;
+    
+    text-align: center;
+}
+
+body header h1 {
+    margin-top: 0px;
+    
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+}
+
+body header h1 span { font-size: 125%; }
+
+body header h2 {
+    margin-bottom: 0px;
+    
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+}
+
+body header div {
+    position: absolute;
+    top: 20px;
+}
+
+body header div img {
+    width: 150px;
+    border: 12px outset #563218;
+}
+
+body header div.mrbabe {
+    left: 17%;
+    
+    transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+}
+
+body header div.mrsbabe {
+    right: 17%;
+    
+    transform: rotate(345deg);
+    -ms-transform: rotate(345deg);
+    -webkit-transform: rotate(345deg);
+}
+
+body section {
+    display: inline-block;
+    width: 31%;
+    margin: 10px 1%;
+    
+    text-align: center;
+    vertical-align: top;
+}
+
+body section h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+body section.songs iframe {
+    display: inline-block;
+    width: 49%;
+    height: auto;
+}
+
+body section.photos img {
+    display: inline-block;
+    width: 49%;
+}
+
+body section.games img {
+    display: block;
+    width: 100%;
+    margin: 2px auto;
+}
+
+body footer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+body footer img {
+    margin: 0px 35px;
+}
+
+body footer h1 {
+    margin-bottom: 20px;
+    
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+}
